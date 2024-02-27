@@ -52,8 +52,7 @@ export default function CreateGroupName (props) {
         updateSelectedStructure,
         updateSelectAll,
         selectedStructure,
-        props.store,
-        props.updateStore
+        props
     ]);
 
     return(
