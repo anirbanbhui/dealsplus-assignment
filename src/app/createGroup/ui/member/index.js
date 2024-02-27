@@ -26,8 +26,7 @@ export default function SelectMember(props) {
     }, [
         updateSelectedUser,
         updateSelectedUserCount,
-        selectedUser,
-        selectedUserCount
+        selectedUser
     ]);
 
     return(

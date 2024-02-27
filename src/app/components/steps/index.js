@@ -10,6 +10,7 @@ export default function Steps(props) {
                         props.pages?.map((item, index) => {
                             return(
                                 <li 
+                                    key={item + index}
                                     className={
                                         props.currentIndex === index ? styles.active: props.currentIndex > index ? styles.completed : ''  
                                     }

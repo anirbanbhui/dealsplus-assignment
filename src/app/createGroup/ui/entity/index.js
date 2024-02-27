@@ -30,7 +30,7 @@ export default function Entity (props) {
             updateStructureList(arr)
         }
 
-    }, [])
+    }, [props])
 
     const handleSelectAll = useCallback(() => {
 
@@ -45,8 +45,8 @@ export default function Entity (props) {
     }, [
         updateSelectAll,
         updateselectedEntity,
-        selectAll, props.store,
-        props.updateStore
+        selectAll, 
+        props
     ]);
 
     const handleEntitySelect = useCallback((name) => {
@@ -73,8 +73,7 @@ export default function Entity (props) {
         updateselectedEntity,
         updateSelectAll,
         selectedEntity,
-        props.store,
-        props.updateStore
+        props
     ]);
 
     const handleShowListofEnitties = useCallback((name) => {

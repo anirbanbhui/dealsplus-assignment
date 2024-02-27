@@ -8,7 +8,7 @@ export default function CreateGroupName (props) {
             ...props.store,
             groupName: e.target.value
         })
-    }, [props.store, props.updateStore]);
+    }, [props]);
 
     return(
         <div className={styles.container}>

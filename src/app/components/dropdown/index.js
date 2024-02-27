@@ -36,7 +36,7 @@ export default function Dropdown(props) {
             }
         )
         updateShowoptions(false)
-    }, [updateGivenAccess, givenAccess, props.store, props.updateStore]);
+    }, [updateGivenAccess, givenAccess, props, updateShowoptions]);
     
 
     return(

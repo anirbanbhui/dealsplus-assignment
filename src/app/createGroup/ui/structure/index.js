@@ -24,8 +24,8 @@ export default function CreateGroupName (props) {
     }, [
         updateSelectAll,
         updateSelectedStructure,
-        selectAll, props.store,
-        props.updateStore
+        selectAll,
+        props
     ]);
 
     const handleStructureSelect = useCallback((name) => {
