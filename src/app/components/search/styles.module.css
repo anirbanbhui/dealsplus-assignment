@@ -1,0 +1,26 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.search {
+    width: 450px;
+    height: 40px;
+    background-image: url('/search.svg');
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    padding-left: 40px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.searchHelper {
+    color: #475467;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}

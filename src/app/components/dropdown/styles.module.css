@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+}
+.dropdown {
+    display: flex;
+    align-items: center;
+}
+.dropdownMenu {
+    position: absolute;
+    background-color: white;
+    border-radius: 9px;
+    top: 30px;
+    right: 0;
+    z-index: 1;
+    width: 200px;
+    border: 1px solid #EAECF0;
+}
+.hidden {
+    display: none;
+}
+.li {
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #EAECF0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}

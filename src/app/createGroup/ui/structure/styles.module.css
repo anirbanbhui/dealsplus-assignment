@@ -1,0 +1,85 @@
+.container {
+    width: 100%;
+    margin-top: 20px;
+}
+.helpertext {
+    color: #101828;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.subHelpertext {
+    color: #475467;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.line {
+    background-color: #EAECF0;
+    height: 1px;
+    align-self: stretch;
+}
+.searchSection {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.selectAll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #475467;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #F9FAFB;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.selectTextGroup {
+    display: flex;
+    align-items: center;
+}
+.checkbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 6px;
+    border: 1px solid #D0D5DD;
+    margin-right: 12px;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+}
+.checkbox:checked {
+    appearance: auto;
+    clip-path: inset(0 0 0 0 round 6px);
+    background-color: blue;
+}
+.structureList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #101828;
+    font-size: 14px;
+    font-style: normal;
+    font-weight:400;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.select {
+    display: flex;
+    align-items: center;
+}
+.list {
+    max-height: 190px;
+    overflow: scroll;
+    min-height: 150px;
+}

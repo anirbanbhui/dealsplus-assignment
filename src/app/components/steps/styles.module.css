@@ -1,0 +1,71 @@
+.container {
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    position: relative;
+    height: 50px;
+}
+.progressContainer {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.progressbar{
+    counter-reset: step;
+}
+.progressbar li {
+    float: left;
+    width: 25%;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #475467;
+}
+.progressbar li:before {
+    content:counter(step);
+    counter-increment: step;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+
+    border: 1px solid #D0D5DD;
+    margin: 0 auto 6px auto;
+    border-radius: 50%;
+    background: white;
+    color: #101828;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progressbar li:after{
+    content: '';
+    position: absolute;
+    width:74%;
+    height: 1px;
+    background: #D0D5DD;
+    top: 12px;
+    left: -37%;
+    z-index: -1;
+}
+.progressbar li:first-child:after{
+    content: none;
+}
+.active {
+    color: #101828 !important;
+    font-weight: 500 !important;
+}
+.active:before {
+    color: white !important;
+    background-color: #101828 !important;
+}
+.completed li {
+    color: #475467 !important;
+}
+.completed:before {
+    margin-top: 2px !important;
+    content:url('/check-icon.svg') !important;
+    border: none !important;
+}

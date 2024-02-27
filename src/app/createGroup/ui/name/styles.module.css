@@ -1,0 +1,39 @@
+.container {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    width: 400px;
+}
+.name {
+    color:#101828;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.nameHelper {
+    color: #344054;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.input {
+    display: flex;
+    padding: 10px 14px;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid#D0D5DD;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    margin-bottom: 6px;
+}
+.desNameHelper {
+    color: #475467;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
