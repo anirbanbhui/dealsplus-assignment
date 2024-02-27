@@ -5,7 +5,7 @@ export default function Steps(props) {
     return(
         <div className={styles.container}>
             <div className={styles.progressContainer}>
-                <ul class={styles.progressbar}>
+                <ul className={styles.progressbar}>
                     {
                         props.pages?.map((item, index) => {
                             return(

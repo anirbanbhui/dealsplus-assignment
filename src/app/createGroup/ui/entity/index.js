@@ -87,12 +87,13 @@ export default function Entity (props) {
     }, [updateShowListOfEntities, showListOfEntities])
 
     const handleExpandAll = useCallback(() => {
-        updateExpandAll(!expandAll)
-    }, [updateExpandAll, expandAll]);
+        updateExpandAll(true)
+    }, [updateExpandAll]);
 
     const handleCollapseAll = useCallback(() => {
         updateShowListOfEntities({});
-    }, [updateShowListOfEntities]);
+        updateExpandAll(false)
+    }, [updateShowListOfEntities, updateExpandAll, expandAll]);
 
     function renderList(entityObj) {
         return Object.keys(entityObj)?.map((item, index) => {
